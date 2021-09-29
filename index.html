@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | News Daily</title>
+
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com"> <!-- ! Change later -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- Login Section -->
+        <section id="login-page">
+            <div class="container" style="width: 80vw; margin-top: 10%;">
+                <div class="text-center">
+                    <h1 class="title">News Daily</h1>
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-body">
+                        <form id="login-form">
+                            <div class="form-group">
+                                <input class="form-control" type="email" id="login-email" placeholder="Email address">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="password" id="login-password" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Login</button>
+                        </form><br>
+                        <div class="text-center">
+                            <small>Don't have an account yet?</small>&nbsp;&nbsp;<a href="#">Sign up</a><br>
+                            <small>or Sign In with Google Account</small><br><br>
+                            <div class="g-signin2" data-onsuccess="onSignIn" style="display: flex; flex-direction: row; justify-content: center;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+        <!-- Register Section -->
+        <section id="register-page">
+            <div class="container" style="width: 80vw; margin-top: 10%;">
+                <div class="text-center">
+                    <h1 class="title">News Daily</h1>
+                </div>
+                <br>
+                <div class="card" style="border: none">
+                    <div class="card-body">
+                        <form id="register-form">
+                            <div class="form-group">
+                                <input class="form-control" type="email" id="register-email" placeholder="Email address">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="password" id="register-password" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Register</button>
+                        </form><br>
+                        <div class="text-center">
+                            <small>Already have an account?</small>&nbsp;&nbsp;<a href="#">Sign in</a><br>
+                            <small>or Sign In with Google Account</small><br><br>
+                            <div class="g-signin2" data-onsuccess="onSignIn" style="display: flex; flex-direction: row; justify-content: center;"></div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="text-center">
+                    <small style="color: rgb(180, 180, 180)">© Dody Virgiawan 2021</small>
+                </div>
+            </div>
+        </section>
+
+    
+        <!-- Admin Dashboard Section -->
+        <section id="dashboard">
+            <div id="news-table-data">
+                <h1 class="title">News Daily</h1>
+                <bold>Content Management System</bold>
+
+                <br><br>
+                <div class="card">
+                    <div class="card-body">
+                        <button id="" type="button" class="btn btn-primary" style="float: right" >Add news</button>
+                        <h4>News List</h4>
+                        <br>
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr style="background-color: #5055be">
+                                    <th scope="col" width="5%">Title</th>
+                                    <th scope="col" width="30%">Content</th>
+                                    <th scope="col" width="9%">Status</th>
+                                    <th scope="col" width="20%">News Image</th>
+                                    <th scope="col" width="5%">Author</th>
+                                    <th scope="col" width="5%">Category</th>
+                                    <th scope="col" width="9%">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Bali, The Icon of Indonesia</td>
+                                    <td>Bali is a province of Indonesia and the westernmost of the Lesser Sunda Islands. East of Java and west of Lombok, the province includes the island of Bali and a few smaller neighbouring islands, notably Nusa Penida, Nusa Lembongan, and Nusa Ceningan. The provincial capital, Denpasar, is the most populous city in the Lesser Sunda Islands and the second-largest, after Makassar, in Eastern Indonesia. The upland town of Ubud is considered Bali's cultural centre. The province is Indonesia's main tourist destination, with a significant rise in tourism since the 1980s. Tourism-related business makes up 80% of its economy. Bali is the only Hindu-majority province in Muslim-majority Indonesia, with 86.9% of the population adhering to Balinese Hinduism.It is renowned for its highly developed arts, including traditional and modern dance, sculpture, painting, leather, metalworking, and music. The Indonesian International Film Festival is held every year in Bali. Other international events held in Bali include the Miss World 2013 and 2018 Annual Meetings of the International Monetary Fund and the World Bank Group. In March 2017, TripAdvisor named Bali as the world's top destination in its Traveller's Choice award, which it also earned in January 2021. Bali is part of the Coral Triangle, the area with the highest biodiversity of marine species especially fish and turtles. In this area alone, over 500 reef-building coral species can be found. For comparison, this is about seven times as many as in the entire Caribbean. Bali is the home of the Subak irrigation system, a UNESCO World Heritage Site. It is also home to a unified confederation of kingdoms composed of 10 traditional royal Balinese houses, each house ruling a specific geographic area. The confederation is the successor of the Bali Kingdom. The royal houses are not recognised by the government of Indonesia; however, they originated before Dutch colonisation.</td>
+                                    <td>
+                                        <select class="form-control">
+                                            <option>inactive</option>
+                                            <option>active</option>
+                                            <option>archived</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <img src="assets/img/sample1.jpg" style="max-width: 100%; height: auto;">
+                                    </td>
+                                    <td>dody.virgiawan97@gmail.com</td>
+                                    <td>Travel & Tourism</td>
+                                    <td>
+                                        <button type="button" class="btn btn-success btn-sm">Edit</button>
+                                        <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Vue JS</td>
+                                    <td>Vue.js (commonly referred to as Vue; pronounced /vjuː/) is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications. It was created by Evan You, and is maintained by him and the rest of the active core team members Vue.js features an incrementally adaptable architecture that focuses on declarative rendering and component composition. The core library is focused on the view layer only. Advanced features required for complex applications such as routing, state management and build tooling are offered via officially maintained supporting libraries and packages. Vue.js allows for extending HTML with HTML attributes called directives. The directives offer functionality to HTML applications, and come as either built-in or user defined directives. Vue was created by Evan You after working for Google using AngularJS in a number of projects. He later summed up his thought process: "I figured, what if I could just extract the part that I really liked about Angular and build something really lightweight." The first source code commit to the project was dated July 2013, and Vue was first released the following February, in 2014.</td>
+                                    <td>
+                                        <select class="form-control">
+                                            <option>inactive</option>
+                                            <option>active</option>
+                                            <option>archived</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <img src="assets/img/sample2.png" style="max-width: 100%; height: auto;">
+                                    </td>
+                                    <td>admin1@email.com</td>
+                                    <td>Technology</td>
+                                    <td>
+                                        <button type="button" class="btn btn-success btn-sm">Edit</button>
+                                        <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                                    </td>
+                                </tr>
+        
+                                <tr>
+                                    <td>Edit videos like a pro!</td>
+                                    <td>Adobe Premiere Pro is a timeline-based video editing software application developed by Adobe Inc. and published as part of the Adobe Creative Cloud licensing program. First launched in 2003, Adobe Premiere Pro is a successor of Adobe Premiere (first launched in 1991). It is geared towards professional video editing, while its sibling, Adobe Premiere Elements, targets the consumer market. Premiere Pro supports high resolution video editing at up to 10,240 × 8,192 resolution, at up to 32 bits per channel color, in both RGB and YUV. Audio sample-level editing, VST audio plug-in support, and 5.1 surround sound mixing are available. Premiere Pro's plug-in architecture enables it to import and export formats beyond those supported by QuickTime or DirectShow, supporting a wide variety of video and audio file formats and codecs on both MacOS and Windows. When used with CineForm's Neo line of plug-ins, it supports 3D editing with the ability to view 3D material using 2D monitors, while making individual left and right eye adjustments. Premiere Pro can be used for all common video editing tasks necessary for producing broadcast-quality, high-definition video. It can be used to import video, audio and graphics, and is used to create new, edited versions of video which can be exported to the medium and format necessary for the distribution. When creating videos using Premiere Pro, various video and still images can be edited together. Titles can be added to videos, and filters can be applied along with other effects.</td>
+                                    <td>
+                                        <select class="form-control">
+                                            <option>inactive</option>
+                                            <option>active</option>
+                                            <option>archived</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <img src="assets/img/sample3.png" style="max-width: 100%; height: auto;">
+                                    </td>
+                                    <td>staff1@email.com</td>
+                                    <td>Art & Culture</td>
+                                    <td>-</td>
+                                </tr>
+                            
+                            </tbody>
+                        </table>
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+        <!-- History Section -->
+        <section id="history">
+            <div id="history-div">
+                <h1 class="title">News Daily</h1>
+                <bold>Content Management System</bold>
+
+                <br><br>
+                <div class="card">
+                    <div class="card-body">
+                        <button id="" type="button" class="btn btn-primary" style="float: right" >Show news</button>
+                        <h4>History List</h4>
+                        <br>
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr style="background-color: #5055be">
+                                    <th scope="col" width="5%">No</th>
+                                    <th scope="col" width="15%">News Title</th>
+                                    <th scope="col" width="30%">Description</th>
+                                    <th scope="col" width="20%">By</th>
+                                    <th scope="col" width="10%">Created At</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Bali, The Icon of Indonesia</td>
+                                    <td>News id 1 has been updated</td>
+                                    <td>dody.virgiawan@gmail.com</td>
+                                    <td>8/8/2021, 8:00:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Vue.js</td>
+                                    <td>News id 2: status has been changed from active to inactive</td>
+                                    <td>admin@gmail.com</td>
+                                    <td>8/9/2021, 11:03:19 AM</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Edit videos like a pro!</td>
+                                    <td>News id 3 has been permanently deleted</td>
+                                    <td>staff@gmail.com</td>
+                                    <td>8/10/2021, 10:00:59 AM</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>    
+            </div>
+        </section>
+        
+        <!-- Sidebar Section -->
+        <section id="sidebar-section">
+            <div class="wrapper">
+                <nav id="sidebar">
+                    <div class="card" style="margin: 5% 5%;">
+                        <div class="card-body" style="background-color: #464aa7; border-radius: 5px 5px; color: #ffffff;">
+                            <div class="user-container">
+                                <div class="row">
+                                    <div class="col avatar">
+                                        <img src="assets/img/sample2.png" alt="Avatar" class="avatar">
+                                    </div>
+                                    <div class="col">
+                                        <div class="row">
+                                            <small><strong>dodyvirgiawan@gmail.com</strong></small>
+                                        </div>
+                                        <div class="row">
+                                            <small><strong>admin</strong></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <br>
+                    <div class="text-center">
+                        <box-icon type='solid' name='dashboard' color='#5055be'></box-icon>
+                    </div>
+
+                    <div class="container">
+                        <hr>
+                        <h6><strong style="color: #464aa7">DASHBOARD</strong></h6>
+                        <ul>
+                            <li><box-icon name='news' color='#5055be'></box-icon>&nbsp;&nbsp;&nbsp;News List</li>
+                            <li><box-icon name='history' color='#5055be'></box-icon></box-icon>&nbsp;&nbsp;&nbsp;News History</li>
+                            <li><box-icon name='add-to-queue' type='solid' color='#5055be'></box-icon>&nbsp;&nbsp;&nbsp;Create News</li>
+                        </ul>
+                     
+                        <hr>
+                        <h6><strong style="color: #464aa7">SETTINGS</strong></h3>
+                        <ul>
+                            <li><box-icon name='user-circle' color='#5055be'></box-icon>&nbsp;&nbsp;&nbsp;Profile</li>
+                            <li><box-icon name='brightness' color='#5055be'></box-icon>&nbsp;&nbsp;&nbsp;Settings</li>
+                            <li><box-icon name='exit' color='#5055be'></box-icon>&nbsp;&nbsp;&nbsp;Logout</li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Create News Section -->
+        <section id="create-news-page">
+            <div class="page-heading">
+                <div id="create-news-div">
+                    <br>
+                    <button id="show-news-btn" type="button" class="btn btn-primary" style="float: right" >Show News List</button><br><br><br>
+                    <div class="card">
+                        <div class="card-header">
+                            Add news
+                        </div>
+                        <div class="card-body">
+                            <form id="add-news-form">
+                                <div class="form-group">
+                                    <label for="add-news-title">News title</label>
+                                    <input class="form-control" type="text" id="add-news-title" placeholder="News title">
+                                    <small>This is the title of the news.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="add-news-content">News content</label>
+                                    <textarea class="form-control" id="add-news-content"></textarea>
+                                    <small>Input the content of the news.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="add-news-category">Categories</label>
+                                    <div id="add-category-selection">
+                                        <select class="form-control">
+                                            <option>Technology</option>
+                                            <option>Business</option>
+                                            <option>Travel & Tourism</option>
+                                            <option>Art & Culture</option>
+                                        </select>
+                                    </div>
+                                    <small>Please select the category which the news belongs to.</small>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="add-news-image">Image</label><br>
+                                    <div id="add-uploaded-image-section">
+                                        <br>
+                                        <img id="uploaded-image" src="assets/img/sample1.jpg" alt="Uploaded image" style="max-width: 20%; height: auto;">
+                                        <br><br>
+                                    </div>
+                                    <input type="file" class="form-control-file" id="add-news-image">
+                                </div><br>
+
+                                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                            </form><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Edit News Section -->
+        <section id="edit-news-page">
+            <div class="page-heading">
+                <div id="edit-news-div">
+                    <br>
+                    <button id="show-news-btn2" type="button" class="btn btn-primary" style="float: right" >Show News List</button><br><br><br>
+                    <div class="card">
+                        <div class="card-header">
+                            Edit News
+                        </div>
+                        <div class="card-body">
+                            <form id="edit-news-form">
+                                <div class="form-group">
+                                    <label for="edit-news-title">News title</label>
+                                    <input class="form-control" type="text" id="edit-news-title" value="Bali, The Icon of Indonesia">
+                                    <small>This is the title of the news.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="edit-news-content">News content</label>
+                                    <textarea class="form-control" id="edit-news-content">Bali is a province of Indonesia and the westernmost of the Lesser Sunda Islands. East of Java and west of Lombok, the province includes the island of Bali and a few smaller neighbouring islands, notably Nusa Penida, Nusa Lembongan, and Nusa Ceningan. The provincial capital, Denpasar, is the most populous city in the Lesser Sunda Islands and the second-largest, after Makassar, in Eastern Indonesia. The upland town of Ubud is considered Bali's cultural centre. The province is Indonesia's main tourist destination, with a significant rise in tourism since the 1980s. Tourism-related business makes up 80% of its economy.
+                                    </textarea>
+                                    <small>Input the content of the news.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="edit-news-category">Categories</label>
+                                    <div id="edit-category-selection">
+                                        <select class="form-control">
+                                            <option>Technology</option>
+                                            <option>Business</option>
+                                            <option selected>Travel & Tourism</option>
+                                            <option>Art & Culture</option>
+                                        </select>
+                                    </div>
+                                    <small>Please select the category which the news belongs to.</small>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="edit-news-image">Image</label><br>
+                                    <div id="edit-uploaded-image-section">
+                                        <br>
+                                        <img id="uploaded-image" src="assets/img/sample1.jpg" alt="Uploaded image" style="max-width: 20%; height: auto;">
+                                        <br><br>
+                                    </div>
+                                    <input type="file" class="form-control-file" id="edit-news-image">
+                                </div><br>
+
+                                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                            </form><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+</body>
+</html>

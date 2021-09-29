@@ -1,0 +1,105 @@
+body {
+    background-color: #f2f7ff;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+hr {
+    color: white
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px
+}
+
+tr th {
+    color: #ffffff;
+}
+
+tr th:first-child{
+    border-radius:10px 0 0 10px;
+}
+  
+tr th:last-child{
+    border-radius:0 10px 10px 0;
+}
+
+tr td {
+    color: #7e7e7e;
+}
+
+#news-table-data {
+    padding: 2% 2%;
+    margin-left: 12%;
+}
+
+#history {
+    padding: 2% 2%;
+    margin-left: 12%; 
+}
+
+#create-news-div {
+    margin-left: 14%;
+    margin-right: 2%;
+}
+
+#edit-news-div {
+    margin-left: 14%;
+    margin-right: 2%; 
+}
+
+#user-container {
+    display: flex;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.card {
+    box-shadow: 0px 0px 14px 10px rgb(222, 230, 253);
+    border-radius: 10px;
+}
+
+.card table {
+    padding: 5px 5px;
+}
+
+.btn-primary {
+    background-color: #5055be;
+}
+
+.btn-primary:hover {
+    background-color: #464aa7;
+}
+
+.title {
+    color: #5055be;
+    font-weight: 1000;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    width: 12%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 0;
+    background: #f7f9fa;
+    color: rgb(0, 0, 0);
+    box-shadow: -10px 0px 30px 1px rgb(145, 145, 145);
+}
+
+#sidebar .container {
+    padding-left: 15%;
+    padding-top: 2%;
+}
